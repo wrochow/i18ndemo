@@ -17,7 +17,9 @@ public class MvcConfig implements WebMvcConfigurer {
 	@Bean
 	public LocaleResolver localeResolver() {
 		SessionLocaleResolver slr = new SessionLocaleResolver();
-		slr.setDefaultLocale(Locale.US);
+		slr.setDefaultLocale(Locale.CANADA);
+		slr.setLocaleAttributeName("session.current.locale");
+		slr.setTimeZoneAttributeName("session.current.timezone");
 		return slr;
 	}
 
@@ -30,6 +32,7 @@ public class MvcConfig implements WebMvcConfigurer {
 
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
+
 		registry.addInterceptor(localeChangeInterceptor());
 	}
 }
