@@ -14,7 +14,7 @@ import org.thymeleaf.templateresolver.ClassLoaderTemplateResolver;
 public class WebConfig implements WebMvcConfigurer {
 
 	@Bean
-	@Description("Thymeleaf template resolver serving HTML 5")
+	@Description("Thymeleaf template resolver serving HTML")
 	public ClassLoaderTemplateResolver templateResolver() {
 
 		var templateResolver = new ClassLoaderTemplateResolver();
