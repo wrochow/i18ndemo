@@ -9,7 +9,10 @@ import org.thymeleaf.spring6.SpringTemplateEngine;
 import org.thymeleaf.spring6.view.ThymeleafViewResolver;
 import org.thymeleaf.templateresolver.ClassLoaderTemplateResolver;
 
-@Configuration
+/**
+ * @deprecated This class is not used. It is a failed attempt to solve the problem. I'm keeping it here for illustration purposes.
+ */
+//@Configuration
 public class WebConfig implements WebMvcConfigurer {
 
 	@Bean
