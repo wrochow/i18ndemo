@@ -13,8 +13,9 @@ found it yet. I decided to create this demo to help others who may be in the sam
 ![Changes to Settings](IntelliJ_Encodings_Settings_2023-10-29.png)<br/>
 _Changes to Settings_
 
-![Changes as seen by Git](IntelliJ_Encodings_Git_changes_2023-10-29.png)<br/>
-_Changes as seen by Git_
+<b>VERY Important Note:</b> Be sure to un-check the "Transparent native-to-ascii conversion" box. If you don't, you'll get Unicode mark-up inserted in your text.
+
+_Why not just accept the character encoding of the underlying files?< /rant>_
 
 # Getting Started
 
